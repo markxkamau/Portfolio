@@ -24,28 +24,44 @@
 
     <!-- Hero Section -->
     <section class="bg-gray-200 text-center py-20">
-        <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio!</h2>
-        <p class="text-gray-600">Junior Software Engineer</p>
-        <p class="mt-4">
-            Driven and motivated Software Engineer with a strong foundation in
-            programming, and a passion for solving complex problems through
-            innovative software solutions.
-        </p>
-        <p class="text-lg mb-8">
-            Showcasing my projects and skills as a developer.
-        </p>
-        <a href="#projects" class="bg-gray-900 text-white py-2 px-4 rounded">View Projects</a>
+        <div class="container mx-auto"> 
+            <p class="mt-4">
+                Driven and motivated Software Engineer with a strong foundation in programming, and a passion for
+                solving complex problems through innovative software solutions.
+            </p>
+            <a href="#projects" class="bg-gray-900 text-white py-2 px-4 rounded mt-8 inline-block">View Projects</a>
+            <a href="path/to/your/resume.pdf"
+                class="bg-white text-gray-900 py-2 px-4 rounded mt-4 inline-block ml-4">Download Resume</a>
+        </div>
     </section>
+
+
 
     <!-- Projects Section -->
     <section id="projects" class="container mx-auto py-20">
         <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1 -->
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-2xl font-bold mb-2">Medical_Track and User Android App</h3>
+                <p class="text-gray-700 mb-4">
+                    Developed a comprehensive medical tracking system and a companion mobile app to manage patient medication schedules and adherence.
+                </p>
+                <ul class="list-disc list-inside text-gray-700 mb-4">
+                    <li>Feature 1: Patient information management</li>
+                    <li>Feature 2: Medication scheduling and reminders</li>
+                    <li>Feature 3: Missed dose tracking and logging</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    <strong>Technologies Used:</strong> Java, Spring Framework, PostgreSQL, HTML, CSS, JavaScript, Flutter
+                </p>
+                <a href="https://markxkamau.com/patient/login" class="text-indigo-600">Live Demo</a> 
+
+            </div>
+
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h3 class="text-2xl font-bold mb-2">Registry_Contacts</h3>
-                <img src="path/to/registry_contacts_screenshot.png" alt="Registry Contacts Screenshot"
-                    class="mb-4 rounded-lg" />
+                <!--<img src="path/to/registry_contacts_screenshot.png" alt="Registry Contacts Screenshot"
+                    class="mb-4 rounded-lg" />-->
                 <p class="text-gray-700 mb-4">
                     Registry_Contacts is a contact management system that allows users
                     to store, manage, and retrieve contact information efficiently.
@@ -56,15 +72,16 @@
                     <li>Feature 3: User authentication and authorization</li>
                 </ul>
                 <p class="text-gray-700 mb-4">
-                    <strong>Technologies Used:</strong> React, Node.js, Express, MongoDB
+                    <strong>Technologies Used:</strong> Java, Spring Boot, PostgreSQL, Thymeleaf
                 </p>
                 <a href="https://github.com/markxkamau/Registry_Contacts" class="text-indigo-600">View on GitHub</a>
-                <!-- <a href="https://live-demo-link.com" class="text-indigo-600 ml-4">Live Demo</a> Uncomment if live demo is available -->
+                <a href="https://markxkamau.com/patient/patient_info" class="text-indigo-600 ml-4">Live Demo</a>
             </div>
+            
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h3 class="text-2xl font-bold mb-2">Thermal_Camera</h3>
-                <img src="path/to/thermal_camera_screenshot.png" alt="Thermal Camera Screenshot"
-                    class="mb-4 rounded-lg" />
+                <!--<img src="path/to/thermal_camera_screenshot.png" alt="Thermal Camera Screenshot"
+                    class="mb-4 rounded-lg" />-->
                 <p class="text-gray-700 mb-4">
                     Thermal_Camera project involves capturing and processing thermal
                     images for various applications.
@@ -75,16 +92,17 @@
                     <li>Feature 3: Alert system for abnormal temperature readings</li>
                 </ul>
                 <p class="text-gray-700 mb-4">
-                    <strong>Technologies Used:</strong> Python, OpenCV, Raspberry Pi
+                    <strong>Technologies Used:</strong> Python, C++, OpenCV, Raspberry Pi, Arduino IDE
                 </p>
                 <a href="https://github.com/markxkamau/Thermal_Camera" class="text-indigo-600">View on GitHub</a>
             </div>
+            
 
             <!-- Project: Church_website -->
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h3 class="text-2xl font-bold mb-2">Church_website</h3>
-                <img src="path/to/church_website_screenshot.png" alt="Church Website Screenshot"
-                    class="mb-4 rounded-lg" />
+                <!--<img src="path/to/church_website_screenshot.png" alt="Church Website Screenshot"
+                    class="mb-4 rounded-lg" />-->
                 <p class="text-gray-700 mb-4">
                     Church_website is a web application designed to manage church
                     activities, events, and member information.
@@ -99,11 +117,13 @@
                     MySQL
                 </p>
                 <a href="https://github.com/markxkamau/Church_website" class="text-indigo-600">View on GitHub</a>
+                <a href="https://markxkamau.com/church_website" class="text-indigo-600 ml-4">Live Demo</a> 
+
             </div>
             <div class="bg-white shadow-md rounded-lg p-6">
                 <h3 class="text-2xl font-bold mb-2">Participant_Selection</h3>
-                <img src="path/to/participant_selection_screenshot.png" alt="Participant Selection Screenshot"
-                    class="mb-4 rounded-lg" />
+                <!--<img src="path/to/participant_selection_screenshot.png" alt="Participant Selection Screenshot"
+                    class="mb-4 rounded-lg" />-->
                 <p class="text-gray-700 mb-4">
                     Participant_Selection is a tool designed to assist in the selection
                     and management of participants for events and studies.
@@ -114,30 +134,23 @@
                     <li>Feature 3: Data export and reporting</li>
                 </ul>
                 <p class="text-gray-700 mb-4">
-                    <strong>Technologies Used:</strong> JavaScript, Node.js, MongoDB
+                    <strong>Technologies Used:</strong> Java, Spring Boot, PostgreSQL
                 </p>
                 <a href="https://github.com/markxkamau/Participant_Selection" class="text-indigo-600">View on GitHub</a>
                 <!-- <a href="https://live-demo-link.com" class="text-indigo-600 ml-4">Live Demo</a> Uncomment if live demo is available -->
             </div>
-            <!-- Project 2 -->
-            <div class="bg-white shadow-md rounded-lg p-6">
-                <h3 class="text-2xl font-bold mb-2">Another Cool Project</h3>
-                <p class="text-gray-700 mb-4">
-                    A brief description of what this project does.
-                </p>
-                <a href="https://github.com/markxkamau/another-cool-project" class="text-indigo-600">View on GitHub</a>
-            </div>
+            
             <!-- Add more projects as needed -->
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="bg-gray-100 py-20">
+    <section id="experience" class="bg-gray-200 py-20">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-center">Experience</h2>
             <div class="experience-item mb-8">
                 <h3 class="text-2xl font-semibold">
-                    Project Engineer Automation - Bühler GmbH
+                    Project Engineer Automation - <a href="https://www.buhlergroup.com/global/de/locations/Germany-Beilngries.html" class=" underline">Bühler GmbH</a>
                 </h3>
                 <p class="text-gray-600">09/2023 - 02/2024 | Beilngries, Germany</p>
                 <ul class="list-disc list-inside mt-2">
@@ -156,25 +169,82 @@
                     </li>
                 </ul>
             </div>
-            <!-- Repeat for other experiences -->
+            <div class="experience-item mb-8">
+                <h3 class="text-2xl font-semibold">
+                    Online Tutor - Self employed
+                </h3>
+                <p class="text-gray-600">09/2022 - 08/2023 | Nairobi, Kenya</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>
+                        Provided personalized online tutoring to students in website development, programming, cloud
+                        computing, and system security.
+                    </li>
+                </ul>
+            </div>
+            <div class="experience-item mb-8">
+                <h3 class="text-2xl font-semibold">
+                    Industrial Attachment - <a href="https://simlaw.co.ke/" class="underline">Simlaw Seeds Ltd</a> </h3>
+                <p class="text-gray-600">05/2022 - 08/2022 | Nairobi, Kenya</p>
+                <ul class="list-disc list-inside mt-2">
+                    <li>
+                        Developed and implemented a digital contact retrieval system, reducing paperwork by 75% and
+                        boosting employee productivity by 25%.
+                    </li>
+                    <li>
+                        Engineered a full-stack web application achieving 50% faster response times than the legacy
+                        system.
+                    </li>
+                    <li>
+                        Deployed and maintained application on Heroku cloud platform, ensuring high availability.
+                    </li>
+                    <li>
+                        Iteratively improved system based on user feedback, enhancing usability and functionality.
+                    </li>
+                    <li>
+                        Produced comprehensive system documentation, reducing new developer onboarding time.
+                    </li>
+                    <li>
+                        Conducted staff training sessions, achieving 95% satisfaction rate and a 15% estimated increase
+                        in ROI due to time savings and efficiency gains.
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-gray-200 py-20">
+    <section id="skills" class="bg-gray-100 py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-12">Skills</h2>
             <div class="text-left">
+                <div class="flex mb-8 items-center justify-center">
+                    <div class="bg-green-500 text-white py-1 px-3 m-2 rounded-lg shadow-md">Strong</div>
+                    <div class="bg-blue-400 text-white py-1 px-3 m-2 rounded-lg shadow-md">Learning</div>
+                </div>
+            </div>
+            <div class="text-center grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Software Engineering -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Software Engineering</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Java</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">C++</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">C#</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">.NET</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Spring Boot</span>
+                    </div>
+                </div>
+
                 <!-- Web Development -->
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
                     <div class="flex flex-wrap justify-center">
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">JavaScript</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">React</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Angular</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">HTML</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">CSS</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">PHP</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">HTML</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">CSS</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">PHP</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">Django</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">Flask</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">NodeJS</span>
                     </div>
                 </div>
 
@@ -182,10 +252,11 @@
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold mb-4">Mobile Development</h3>
                     <div class="flex flex-wrap justify-center">
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Flutter</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Dart</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Firebase Cloud
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Firebase Cloud
                             Messaging</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">Flutter</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">Dart</span>
+                        
                     </div>
                 </div>
 
@@ -193,11 +264,9 @@
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold mb-4">Data Science</h3>
                     <div class="flex flex-wrap justify-center">
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Python</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Pandas</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Matplotlib</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Sklearn</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Scikit</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Python</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">Pandas</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">sk-learn</span>
                     </div>
                 </div>
 
@@ -205,21 +274,8 @@
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold mb-4">AI and Machine Learning</h3>
                     <div class="flex flex-wrap justify-center">
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">TensorFlow</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">OpenCV</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Qiskit</span>
-                    </div>
-                </div>
-
-                <!-- Software Engineering -->
-                <div class="mb-8">
-                    <h3 class="text-2xl font-semibold mb-4">Software Engineering</h3>
-                    <div class="flex flex-wrap justify-center">
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Java</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">C++</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">C#</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">.NET</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Spring Boot</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">OpenCV</span>
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">TensorFlow</span>
                     </div>
                 </div>
 
@@ -227,9 +283,9 @@
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold mb-4">Databases</h3>
                     <div class="flex flex-wrap justify-center">
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">MSSQL Server</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">MySQL</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">PostgreSQL</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">MSSQL Server</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">MySQL</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">PostgreSQL</span>
                     </div>
                 </div>
 
@@ -237,16 +293,28 @@
                 <div class="mb-8">
                     <h3 class="text-2xl font-semibold mb-4">Tools</h3>
                     <div class="flex flex-wrap justify-center">
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Postman</span>
-                        <span class="bg-white text-gray-900 py-2 px-4 m-2 rounded-lg shadow-md">Matlab</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Git/GitHub</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Linux</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">NGINX</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Digital Ocean</span>
+                        <span class="bg-green-500 text-white py-2 px-4 m-2 rounded-lg shadow-md">Azure</span>
+                    </div>
+                </div>
+
+                <!-- Interests -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Upcoming Interests</h3>
+                    <div class="flex flex-wrap justify-center">
+                        <span class="bg-blue-400 text-white py-2 px-4 m-2 rounded-lg shadow-md">Qiskit</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Education Section -->
-    <section id="education" class="bg-gray-100 py-20">
+    <section id="education" class="bg-gray-200 py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-12">Education</h2>
             <p class="text-xl">Bachelor of Science, Computer Science</p>
@@ -264,6 +332,7 @@
                 Feel free to reach out to me via email or LinkedIn.
             </p>
             <div class="flex justify-center">
+                <a href="tel:+49015205640212" class="text-indigo-600 mx-2">Phone</a>
                 <a href="mailto:markxkamau@example.com" class="text-indigo-600 mx-2">Email</a>
                 <a href="https://www.linkedin.com/in/mark-kamau-250979208/" class="text-indigo-600 mx-2">LinkedIn</a>
             </div>
